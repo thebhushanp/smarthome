@@ -8,6 +8,7 @@ fan = 6
 gpio.mode(light, gpio.OUTPUT)
 gpio.mode(fan, gpio.OUTPUT) 
 
+-- R-pi IP
 Broker="192.168.1.200"
 
  function reconnect()
