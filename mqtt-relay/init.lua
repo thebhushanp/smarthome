@@ -1,15 +1,14 @@
 -- One time ESP Setup --
 wifi.setmode(wifi.STATION)
-wifi.sta.config ( "R.J.D" , "04078454" ) 
+wifi.sta.config { ssid="R.J.D" , pwd="04078454" }
 print(wifi.sta.getip())
-
 -- Constants
 light = 5
 fan = 6
 gpio.mode(light, gpio.OUTPUT)
 gpio.mode(fan, gpio.OUTPUT) 
 
-Broker="192.168.1.109"
+Broker="192.168.1.200"
 
  function reconnect()
     print ("Waiting for Wifi")
